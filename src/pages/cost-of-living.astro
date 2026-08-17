@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import CostOfLivingPage from '../components/pages/CostOfLivingPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Cost of Living Abroad | Compare Portugal, Greece, Italy & Argentina"
+      description="Compare cost of living in retirement destinations. See how your budget stretches further in Portugal, Greece, Italy, and Argentina vs the United States."
+      canonical="/cost-of-living"
+    />
+  </Fragment>
+  <CostOfLivingPage client:load />
+</Layout>

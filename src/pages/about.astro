@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import AboutPage from '../components/pages/AboutPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Our Approach — Retirement Citizenship"
+      description="We provide the strategic analysis family offices require before committing capital across borders. Not a broker. Not a law firm."
+      canonical="/about"
+      ogTitle="About | Retirement Citizenship"
+      ogDescription="Strategic residency and citizenship intelligence for American families, family offices, and their advisors."
+    />
+  </Fragment>
+  <AboutPage client:load />
+</Layout>

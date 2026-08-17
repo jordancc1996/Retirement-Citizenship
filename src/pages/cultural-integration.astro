@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import CulturalIntegrationPage from '../components/pages/CulturalIntegrationPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Cultural Integration Guide for Retirement Abroad"
+      description="Learn how to integrate into your new country during retirement. Tips on language learning, building local relationships, and navigating cultural differences."
+      canonical="/cultural-integration"
+      ogTitle="Cultural Integration Guide for Retirement Abroad"
+      ogDescription="Learn how to integrate into your new country during retirement. Tips on language learning, building local relationships, and navigating cultural differences."
+    />
+  </Fragment>
+  <CulturalIntegrationPage client:load />
+</Layout>

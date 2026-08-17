@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import LanguageRequirementsPage from '../components/pages/LanguageRequirementsPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Language Requirements for Naturalization"
+      description="Analysis of language requirements for citizenship naturalization in Portugal, Spain, Italy, Greece, and other popular retirement destinations."
+      canonical="/language-requirements-naturalization"
+      ogTitle="Language Requirements for Naturalization"
+      ogDescription="Analysis of language requirements for citizenship naturalization in Portugal, Spain, Italy, Greece, and other popular retirement destinations."
+    />
+  </Fragment>
+  <LanguageRequirementsPage client:load />
+</Layout>

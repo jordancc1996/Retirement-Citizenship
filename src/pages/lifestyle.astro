@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import LifestylePage from '../components/pages/LifestylePage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Retirement Lifestyle Abroad | Coastal, Urban & Countryside Living"
+      description="Explore luxury retirement lifestyles in Portugal, Greece, Italy and Argentina. Discover coastal living, urban sophistication, and countryside retreats for your retirement abroad."
+      canonical="/lifestyle"
+      ogTitle="Retirement Lifestyle Abroad | Coastal, Urban & Countryside Living"
+      ogDescription="Explore luxury retirement lifestyles in Portugal, Greece, Italy and Argentina for your dream retirement."
+    />
+  </Fragment>
+  <LifestylePage client:load />
+</Layout>

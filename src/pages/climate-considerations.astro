@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import ClimateConsiderationsPage from '../components/pages/ClimateConsiderationsPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Climate Factors for Retiring Abroad"
+      description="Guide to climate factors for retirement abroad including heat, water security, coastal risks, and climate-resilient destinations in Portugal, Spain, and beyond."
+      canonical="/climate-considerations"
+      ogTitle="Climate Considerations for International Retirement"
+      ogDescription="Guide to climate factors for retirement abroad including heat, water security, coastal risks, and climate-resilient destinations in Portugal, Spain, and beyond."
+    />
+  </Fragment>
+  <ClimateConsiderationsPage client:load />
+</Layout>

@@ -1,0 +1,40 @@
+---
+import { SITE_CONFIG } from '@/lib/seo/config';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogTitle?: string;
+  ogDescription?: string;
+}
+
+const { title, description, canonical, ogTitle, ogDescription } = Astro.props;
+
+const shouldAppendSiteName =
+  !!title && !title.includes(SITE_CONFIG.name) && !title.includes('|');
+const fullTitle = title
+  ? (shouldAppendSiteName ? `${title} | ${SITE_CONFIG.name}` : title)
+  : SITE_CONFIG.defaultTitle;
+const fullDescription = description || SITE_CONFIG.defaultDescription;
+const fullCanonical = canonical.startsWith('http')
+  ? canonical
+  : `${SITE_CONFIG.url}${canonical.startsWith('/') ? canonical : `/${canonical}`}`;
+const fullOgImage = `${SITE_CONFIG.url}${SITE_CONFIG.defaultOgImage}`;
+const resolvedOgTitle = ogTitle || fullTitle;
+const resolvedOgDescription = ogDescription || fullDescription;
+---
+<title>{fullTitle}</title>
+<meta name="description" content={fullDescription} />
+<link rel="canonical" href={fullCanonical} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={resolvedOgTitle} />
+<meta property="og:description" content={resolvedOgDescription} />
+<meta property="og:url" content={fullCanonical} />
+<meta property="og:image" content={fullOgImage} />
+<meta property="og:site_name" content={SITE_CONFIG.name} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={SITE_CONFIG.twitterHandle} />
+<meta name="twitter:title" content={resolvedOgTitle} />
+<meta name="twitter:description" content={resolvedOgDescription} />
+<meta name="twitter:image" content={fullOgImage} />

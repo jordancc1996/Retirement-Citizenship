@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import ContactPage from '../components/pages/ContactPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Request a Private Consultation — RC"
+      description="We accept a limited number of new engagements each year. Begin with a confidential, no-obligation consultation."
+      canonical="/contact"
+    />
+  </Fragment>
+  <ContactPage client:load />
+</Layout>

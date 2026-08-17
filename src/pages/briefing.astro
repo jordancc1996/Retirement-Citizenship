@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import BriefingPage from '../components/pages/BriefingPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="2026 UHNW Global Mobility & Tax Report | RC"
+      description="Access the 2026 UHNW Global Mobility & Tax Strategy Report. Institutional analysis of residency, citizenship, and tax planning for American families."
+      canonical="/briefing"
+    />
+  </Fragment>
+  <BriefingPage client:load />
+</Layout>

@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import PrivacyPolicyPage from '../components/pages/PrivacyPolicyPage';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Privacy Policy"
+      description="Privacy Policy for Retirement Citizenship. Learn how we collect, use, and protect your personal information in compliance with US and California CCPA laws."
+      canonical="/privacy-policy"
+    />
+  </Fragment>
+  <PrivacyPolicyPage client:load />
+</Layout>
