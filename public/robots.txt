@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy
+Sitemap: https://retirementcitizenship.com/sitemap-index.xml
