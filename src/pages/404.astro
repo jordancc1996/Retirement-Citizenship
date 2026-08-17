@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import NewsletterSignup from '../components/NewsletterSignup';
+import Footer from '../components/Footer';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Page Not Found"
+      description="The page you're looking for doesn't exist. Return to Retirement Citizenship homepage for international retirement planning resources, golden visa guides, and expert advice."
+      canonical="/404"
+      ogTitle="Page Not Found | Retirement Citizenship"
+      ogDescription="The page you're looking for doesn't exist. Return to Retirement Citizenship homepage for international retirement planning resources, golden visa guides, and expert advice."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+  </Fragment>
+
+  <div class="min-h-screen bg-background">
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm">
+      <div class="container mx-auto px-8 py-4">
+        <nav class="flex items-center justify-between text-xs tracking-[0.15em] uppercase font-normal">
+          <div class="flex items-center space-x-8">
+            <a href="/about" class="hover:opacity-60 transition-opacity text-primary">About</a>
+            <a href="/lifestyle" class="hover:opacity-60 transition-opacity text-primary">Lifestyle</a>
+            <a href="/strategic-analysis" class="hover:opacity-60 transition-opacity text-primary">Blogs</a>
+          </div>
+
+          <a href="/" class="font-normal text-xs tracking-[0.15em] text-primary hover:opacity-60 transition-opacity">
+            RETIREMENT CITIZENSHIP
+          </a>
+
+          <div class="flex items-center space-x-8">
+            <a href="/strategic-analysis" class="hover:opacity-60 transition-opacity text-primary">Analysis</a>
+            <a href="/cost-of-living" class="hover:opacity-60 transition-opacity text-primary">Cost of Living</a>
+            <a href="/contact" class="hover:opacity-60 transition-opacity text-primary">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <div class="flex min-h-[60vh] items-center justify-center">
+        <div class="text-center max-w-2xl mx-auto px-8">
+          <h1 class="mb-4 text-6xl font-light text-primary">404</h1>
+          <h2 class="mb-6 text-2xl font-light text-primary">Page Not Found</h2>
+          <p class="mb-8 text-lg text-primary/80 leading-relaxed">
+            The page you're looking for doesn't exist or has been moved. Don't worry – we can help you find what you need. Explore our resources on <a href="/strategic-analysis" class="text-primary underline hover:opacity-70 transition-opacity">international retirement planning</a>, <a href="/strategic-analysis" class="text-primary underline hover:opacity-70 transition-opacity">golden visa updates</a>, or <a href="/cost-of-living" class="text-primary underline hover:opacity-70 transition-opacity">cost of living comparisons</a>.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/"
+              class="inline-block bg-primary text-primary-foreground px-8 py-4 text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+            >
+              Return to Home
+            </a>
+            <a
+              href="/contact"
+              class="inline-block border border-primary text-primary px-8 py-4 text-sm uppercase tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <NewsletterSignup client:load />
+    </main>
+
+    <Footer client:load />
+  </div>
+</Layout>
