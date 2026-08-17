@@ -1,0 +1,140 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Breadcrumbs from '../../components/seo/Breadcrumbs';
+import ShareButtons from '../../components/ShareButtons';
+import RelatedArticles from '../../components/RelatedArticles';
+import UniversalContactForm from '../../components/UniversalContactForm';
+import { DisclaimerArticle } from '../../components/DisclaimerFooter';
+import { SITE_CONFIG } from '../../lib/seo/config';
+import { generateArticleSchema } from '../../lib/seo/structured-data';
+import { assetUrl } from '../../lib/assetUrl';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map(article => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+const slug = article.slug;
+const canonical = `${SITE_CONFIG.url}/strategic-analysis/${slug}`;
+const ogImagePath = article.data.ogImage || SITE_CONFIG.defaultOgImage;
+const ogImage = ogImagePath.startsWith('http') ? ogImagePath : `${SITE_CONFIG.url}${ogImagePath}`;
+
+const imageModules = import.meta.glob<{ default: ImageMetadata }>('../../assets/*.jpg', { eager: true });
+const imageMap: Record<string, ImageMetadata> = {};
+for (const [path, mod] of Object.entries(imageModules)) {
+  const name = path.split(/[/\\]/).pop() || '';
+  imageMap[name] = mod.default;
+}
+const hero = imageMap[article.data.image];
+const heroSrc = hero ? assetUrl(hero) : '';
+
+const articleSchema = generateArticleSchema({
+  headline: article.data.title,
+  description: article.data.metaDescription,
+  image: ogImagePath,
+  datePublished: article.data.date,
+  dateModified: article.data.date,
+  author: { name: SITE_CONFIG.author },
+  publisher: { name: SITE_CONFIG.name, logo: SITE_CONFIG.logo },
+});
+---
+<Layout>
+  <Fragment slot="head">
+    <title>{article.data.metaTitle}</title>
+    <meta name="description" content={article.data.metaDescription} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={article.data.metaTitle} />
+    <meta property="og:description" content={article.data.metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={SITE_CONFIG.name} />
+    <meta property="article:published_time" content={article.data.date} />
+    <meta property="article:author" content={SITE_CONFIG.author} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={SITE_CONFIG.twitterHandle} />
+    <meta name="twitter:title" content={article.data.metaTitle} />
+    <meta name="twitter:description" content={article.data.metaDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background">
+    <Header variant="hero" client:load />
+
+    <section
+      class="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat -mt-[120px] pt-[120px]"
+      style={heroSrc ? `background-image: url(${heroSrc})` : undefined}
+    >
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+      <div class="container mx-auto px-8 max-w-4xl text-center relative z-10">
+        {article.data.heroKicker && (
+          <span class="text-sm text-white/70 uppercase tracking-[0.2em] mb-4 block">{article.data.heroKicker}</span>
+        )}
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light mb-6 text-white">
+          {article.data.title}
+        </h1>
+        {article.data.heroSubtitle && (
+          <p class="font-sans text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
+            {article.data.heroSubtitle}
+          </p>
+        )}
+      </div>
+    </section>
+
+    <div class="container mx-auto max-w-3xl px-4 pt-6 pb-2">
+      <Breadcrumbs
+        items={[
+          { name: 'Strategic Analysis', url: '/strategic-analysis' },
+          { name: article.data.title, url: `/strategic-analysis/${slug}` },
+        ]}
+        client:load
+      />
+    </div>
+
+    <article class="container mx-auto max-w-3xl px-4 pb-16 pt-4">
+      <DisclaimerArticle />
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+    </article>
+
+    <div class="border-t">
+      <div class="container mx-auto">
+        <ShareButtons
+          title={article.data.hubTitle}
+          url={canonical}
+          client:load
+        />
+      </div>
+    </div>
+
+    <RelatedArticles
+      currentSlug={`/strategic-analysis/${slug}`}
+      currentType={article.data.relatedType || 'blog'}
+      client:load
+    />
+
+    <section class="py-20 bg-secondary/30">
+      <div class="container mx-auto px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-light text-primary mb-4">Request the 2026 Market Analysis</h2>
+          <p class="text-lg text-primary leading-relaxed max-w-3xl mx-auto mb-12">
+            Receive our comprehensive briefing on residency programs, regulatory changes, and strategic opportunities.
+          </p>
+        </div>
+        <UniversalContactForm client:load />
+      </div>
+    </section>
+
+    <Footer client:load />
+  </div>
+</Layout>

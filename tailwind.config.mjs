@@ -1,4 +1,5 @@
 import tailwindcssAnimate from 'tailwindcss-animate';
+import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -101,7 +102,66 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': 'hsl(var(--foreground))',
+            '--tw-prose-headings': 'hsl(var(--primary))',
+            '--tw-prose-links': 'hsl(var(--primary))',
+            '--tw-prose-bold': 'hsl(var(--foreground))',
+            '--tw-prose-quotes': 'hsl(var(--muted-foreground))',
+            '--tw-prose-quote-borders': 'hsl(var(--primary) / 0.2)',
+            maxWidth: 'none',
+            h2: {
+              fontSize: '1.5rem',
+              fontWeight: '700',
+              color: 'hsl(var(--primary))',
+              marginTop: '3rem',
+              marginBottom: '1.5rem',
+            },
+            h3: {
+              fontSize: '1.25rem',
+              fontWeight: '500',
+              color: 'hsl(var(--primary))',
+              marginTop: '2rem',
+              marginBottom: '1rem',
+            },
+            p: {
+              marginBottom: '1.5rem',
+              lineHeight: '1.75',
+            },
+            blockquote: {
+              fontStyle: 'italic',
+              fontWeight: '400',
+              fontSize: '1.25rem',
+              lineHeight: '1.75',
+              borderLeftWidth: '4px',
+              borderLeftColor: 'hsl(var(--primary) / 0.2)',
+              paddingLeft: '1.5rem',
+              color: 'hsl(var(--muted-foreground))',
+              quotes: 'none',
+            },
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:last-of-type::after': { content: 'none' },
+            a: {
+              textDecoration: 'underline',
+              fontWeight: '400',
+            },
+            ul: {
+              marginBottom: '2rem',
+            },
+            li: {
+              marginTop: '0.75rem',
+              marginBottom: '0.75rem',
+            },
+            iframe: {
+              width: '100%',
+              height: '100%',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, typography],
 };
