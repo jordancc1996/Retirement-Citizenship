@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 ---
 <Layout>
   <Fragment slot="head">
     <title>Retirement Citizenship — Global Mobility Advisory</title>
-    <meta name="description" content="Global mobility advisory for American families. Investment migration, golden visa programs, and second citizenship strategies." />
+    <meta name="description" content="Global mobility advisory for American families." />
   </Fragment>
-  <div style="padding: 4rem; font-family: 'Inter', sans-serif;">
-    <h1 style="font-family: 'Cormorant Garamond', serif;">
-      Astro scaffold complete — Phase 2 begins here.
-    </h1>
-  </div>
+  <Header client:load />
+  <main style="min-height: 60vh; padding: 4rem; font-family: 'Cormorant Garamond', serif;">
+    <h1>Phase 2 — Header and Footer confirmed</h1>
+  </main>
+  <Footer client:load />
 </Layout>
