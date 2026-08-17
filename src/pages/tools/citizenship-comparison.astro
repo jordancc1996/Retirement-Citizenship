@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHead from '../../components/seo/PageHead.astro';
+import CitizenshipComparison from '../../components/tools/CitizenshipComparison';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Jurisdictions — Retirement Citizenship"
+      description="In-depth analysis of residency and citizenship programs for American families with $5M+ in investable assets."
+      canonical="/tools/citizenship-comparison"
+    />
+  </Fragment>
+  <CitizenshipComparison client:load />
+</Layout>

@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHead from '../../components/seo/PageHead.astro';
+import StudentMobilityCalculator from '../../components/tools/StudentMobilityCalculator';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Family Wealth & Mobility Assessment | Retirement Citizenship"
+      description="Answer a few questions to receive a tailored Golden Visa recommendation aligned with your family's lifestyle, assets, and future goals."
+      canonical="/tools/student-mobility-calculator"
+    />
+  </Fragment>
+  <StudentMobilityCalculator client:load />
+</Layout>

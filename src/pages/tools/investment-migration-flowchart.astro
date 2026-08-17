@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHead from '../../components/seo/PageHead.astro';
+import InvestmentMigrationFlowchart from '../../components/tools/InvestmentMigrationFlowchart';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Investment Migration Flowchart | Step-by-Step Process"
+      description="View the step-by-step process for citizenship and residency by investment programs. Select your destination to see the specific milestones."
+      canonical="/tools/investment-migration-flowchart"
+    />
+  </Fragment>
+  <InvestmentMigrationFlowchart client:load />
+</Layout>

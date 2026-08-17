@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '../components/seo/PageHead.astro';
+import ToolsHub from '../components/tools/ToolsHub';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="Tools | Retirement Citizenship"
+      description="Explore our collection of tools to help you plan your retirement abroad and citizenship by investment journey."
+      canonical="/tools"
+    />
+  </Fragment>
+  <ToolsHub client:load />
+</Layout>

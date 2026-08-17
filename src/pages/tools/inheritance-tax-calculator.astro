@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHead from '../../components/seo/PageHead.astro';
+import InheritanceTaxCalculator from '../../components/tools/InheritanceTaxCalculator';
+---
+<Layout>
+  <Fragment slot="head">
+    <PageHead
+      title="UK Inheritance Tax Calculator | Retirement Citizenship"
+      description="Calculate your potential UK inheritance tax liability. Understand nil-rate bands, residence relief, and charity donations."
+      canonical="/tools/inheritance-tax-calculator"
+    />
+  </Fragment>
+  <InheritanceTaxCalculator client:load />
+</Layout>
