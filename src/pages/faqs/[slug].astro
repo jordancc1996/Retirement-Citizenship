@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { DisclaimerFooter } from '../../components/DisclaimerFooter';
+import UniversalContactForm from '../../components/UniversalContactForm';
+import { SITE_CONFIG } from '../../lib/seo/config';
+
+export async function getStaticPaths() {
+  const faqs = (await getCollection('faqs')).sort((a, b) => a.data.order - b.data.order);
+  return faqs.map((faq, index) => ({
+    params: { slug: faq.slug },
+    props: {
+      faq,
+      prev: index > 0 ? faqs[index - 1] : null,
+      next: index < faqs.length - 1 ? faqs[index + 1] : null,
+    },
+  }));
+}
+
+const { faq, prev, next } = Astro.props;
+const { Content } = await faq.render();
+const canonical = `${SITE_CONFIG.url}/faqs/${faq.slug}`;
+---
+<Layout>
+  <Fragment slot="head">
+    <title>{faq.data.metaTitle}</title>
+    <meta name="description" content={faq.data.metaDescription} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={faq.data.metaTitle} />
+    <meta property="og:description" content={faq.data.metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content={SITE_CONFIG.name} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background">
+    <Header client:load />
+
+    <section class="pt-32 pb-20 bg-background">
+      <div class="container mx-auto px-8 max-w-4xl">
+        <a
+          href="/faqs"
+          class="inline-flex items-center space-x-2 text-primary hover:opacity-60 transition-opacity mb-8 group"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          <span class="text-sm tracking-[0.1em] uppercase">Back to FAQs</span>
+        </a>
+
+        <h1 class="text-4xl md:text-5xl font-light mb-8 text-primary leading-tight">
+          {faq.data.question}
+        </h1>
+
+        <div class="prose prose-lg max-w-none text-lg text-primary leading-relaxed">
+          <Content />
+        </div>
+
+        {faq.data.relatedLinks && faq.data.relatedLinks.length > 0 && (
+          <div class="mt-12 pt-8 border-t border-primary/10">
+            <h2 class="text-xs tracking-[0.15em] uppercase text-primary/60 mb-4">Related Reading</h2>
+            <ul class="space-y-2">
+              {faq.data.relatedLinks.map((link) => (
+                <li>
+                  <a href={link.url} class="text-primary underline underline-offset-4 hover:opacity-60 transition-opacity">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div class="mt-16 pt-8 border-t border-primary/20">
+          <div class="flex justify-between items-center">
+            {prev && (
+              <a
+                href={`/faqs/${prev.slug}`}
+                class="text-primary hover:opacity-60 transition-opacity flex items-center space-x-2 group"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                <span class="text-sm tracking-[0.1em] uppercase">Previous Question</span>
+              </a>
+            )}
+            {next && (
+              <a
+                href={`/faqs/${next.slug}`}
+                class="text-primary hover:opacity-60 transition-opacity flex items-center space-x-2 group ml-auto"
+              >
+                <span class="text-sm tracking-[0.1em] uppercase">Next Question</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+              </a>
+            )}
+          </div>
+        </div>
+
+        <DisclaimerFooter />
+      </div>
+    </section>
+
+    <section class="py-20 bg-secondary/30">
+      <div class="container mx-auto px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-light text-primary mb-4">
+            Request a Private Consultation
+          </h2>
+          <p class="text-lg text-primary leading-relaxed max-w-3xl mx-auto mb-12">
+            Speak directly with our advisory team for guidance tailored to your situation.
+          </p>
+        </div>
+        <UniversalContactForm client:load />
+      </div>
+    </section>
+
+    <Footer client:load />
+  </div>
+</Layout>

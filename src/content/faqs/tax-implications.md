@@ -1,0 +1,50 @@
+---
+title: "What are the tax implications of retiring abroad?"
+metaTitle: "What are the tax implications of retiring abroad? | Retirement Citizenship"
+metaDescription: "Comprehensive guide to tax implications of retiring abroad for high-net-worth individuals: DTAs, common mistakes, Portugal NHR/IFICI, Spain Beckham Law/Wealth Tax, Italy flat tax regimes, and exit planning strategies."
+category: "faq"
+question: "What are the tax implications of retiring abroad?"
+order: 6
+---
+
+Moving your tax residency to another country is one of the most consequential financial decisions in a retirement plan. The income that was taxed under one system—and protected by a network of deductions, exemptions, and treaties you've spent decades navigating—suddenly falls under a foreign jurisdiction's rules. The stakes are high, the rules are complex, and the cost of a poorly structured transition can easily run into six figures over a decade. This page gives high-net-worth retirees a working framework for understanding what changes, what stays the same, and what questions to bring to qualified advisors before you commit to any destination.
+
+## Understanding Tax Implications for Retirement Abroad
+
+The first thing to understand is that moving abroad does not automatically mean leaving your home country's tax system. US citizens, for example, are taxed on worldwide income regardless of where they live. That means a retiree drawing pension income, investment distributions, and Social Security from a house in Portugal still files a US Form 1040 every April—and may owe tax in Portugal as well. The question is not whether you'll be taxed, but by which countries, on what income, and at what rates.
+
+Most developed countries have Double Taxation Agreements (DTAs) that determine which government has primary taxing rights over specific income types. Pension income is commonly addressed in these treaties, though the treatment varies. Under the US–Portugal DTA, for example, Social Security benefits are taxed only by the US, while private pensions may be taxable in Portugal depending on how they're structured. Getting this classification right is not optional—it is the foundation of every number in your retirement income plan.
+
+Beyond treaties, the specific regime you qualify for in your destination country matters enormously. The three countries most commonly chosen by internationally mobile retirees—Portugal, Spain, and Italy—each have distinct preferential tax structures. These regimes have time limits, eligibility rules, and income-type restrictions that are easy to misread from a distance. A retiree who moves to Portugal in 2026 without understanding that the NHR regime closed in 2024 could face a tax bill 30–40 percentage points higher than they budgeted for.
+
+Tax residency is also distinct from physical residency. You typically trigger tax residency in a country by spending more than 183 days there in a calendar year, or by establishing your primary home there. But some countries apply additional tests—center of economic interests, family location, habitual abode. Spending 182 days in Portugal and 183 days in another Schengen country does not make you stateless for tax purposes; it typically makes you a tax resident in the country where you have the stronger ties. This is an area where incorrect planning has permanent consequences.
+
+## Common Tax Mistakes Retirees Make
+
+Assuming the preferential regime they researched is still available. Tax regimes change, sometimes quickly. Portugal's NHR program—which offered a flat 10% tax rate on foreign pensions for ten years—closed to new applicants in January 2024, with a final transition window ending March 31, 2025. A retiree who planned their budget around NHR but moved to Lisbon in April 2025 or later is subject to Portugal's standard progressive income tax rates of 12.5% to 48%. Always verify the current status of any regime before treating it as a planning assumption.
+
+Conflating residency-program income requirements with tax planning. Many retirees treat the visa income threshold (Portugal's D7 Visa requires €920/month in passive income) as their tax planning floor. It is not. That figure qualifies you for a residency permit; it says nothing about your effective tax rate once you're there, how your investment distributions are classified, or whether your pension falls under the DTA's definition of "government pension" vs. "private pension." Visa eligibility and tax efficiency are separate analyses that need to happen in parallel.
+
+Failing to coordinate US and foreign filing deadlines. US citizens living abroad have an automatic two-month extension to June 15 for filing returns, and can request further extensions to October 15. But these extensions do not postpone payment of any tax owed. A retiree managing foreign accounts, foreign property income, and FBAR reporting requirements (FinCEN 114, due April 15) across two jurisdictions can easily miss a filing if they treat this as a one-country problem. The penalties for FBAR non-compliance are severe—up to $10,000 per violation for non-willful failures.
+
+Ignoring wealth and inheritance tax exposure in the destination country. Income tax is usually the focus of pre-move planning, but it is not the only exposure. Spain has a Wealth Tax on assets held in Spanish territory, though Madrid currently applies a 100% bonification (exemption) that other regions—including Catalonia and Valencia—do not. Italy's €300,000 flat tax regime (as of 2026) includes an exemption on foreign gift and inheritance taxes, but only for assets outside Italy; domestic assets remain exposed. Understanding the full tax stack—income, wealth, and succession—prevents surprises that surface years after the move.
+
+Underestimating the year-after-regime-expires problem. Most preferential regimes run 6, 10, or 15 years. The year the regime expires, worldwide income, worldwide wealth, and full domestic reporting obligations switch on simultaneously. A retiree under Spain's Beckham Law for six years may have allowed foreign dividends to compound tax-free; in year seven, Spain's progressive IRPF rates and wealth tax apply to that portfolio. Exit planning—ideally beginning two years before the regime expires—is a distinct and critical exercise.
+
+## Country-Specific Tax Considerations
+
+### Portugal
+
+Portugal's Non-Habitual Resident (NHR) regime closed to new applicants in January 2024, with a final transition window ending March 31, 2025. Its replacement, the IFICI program (informally called NHR 2.0), targets professionals in qualifying sectors such as technology, science, and research—not retirees drawing pension income. A retiree arriving in Portugal in 2026 is subject to the standard progressive income tax rate, which tops out at 48%. Portugal does maintain a network of DTAs, and the US–Portugal treaty is particularly relevant for American retirees drawing Social Security or government pensions. Private-sector pensions and investment distributions require careful classification under the treaty. On the positive side, there is a separate 7% flat tax available for foreign retirees who settle in qualifying municipalities in interior Portugal under a distinct regime; this is not the same as NHR and has its own eligibility rules.
+
+### Spain
+
+Spain's primary preferential regime—the Beckham Law (formally the Special Expat Tax Regime)—offers a flat 24% rate on Spanish-source employment income up to €600,000 for six years, with full exemption from Spanish tax on foreign income. However, it is primarily structured for workers relocating for employment or entrepreneurs meeting startup criteria. Retirees drawing pension income do not typically qualify. Spain's Non-Lucrative Visa, the standard pathway for non-EU retirees, requires €25,816 per year in passive income—more than twice Portugal's threshold—and puts the resident on Spain's standard IRPF progressive rates up to 47%, plus potential Wealth Tax exposure depending on the autonomous community of residence. The US–Spain DTA covers most scenarios, but Spain's Modelo 720 foreign-asset reporting requirement (assets exceeding €50,000) adds an ongoing compliance obligation.
+
+### Italy
+
+Italy has two distinct preferential regimes relevant to retirees. The first is the HNWI flat tax: as of January 2026, new residents who have not been Italian tax residents for nine of the prior ten years can pay a single annual €300,000 lump sum covering all foreign-source income, regardless of amount. This replaced the €100,000 rate (through 2024) and the €200,000 rate (2025). Family members can be included at €50,000 per person. The regime runs for up to 15 years and includes exemption from Italian inheritance and gift tax on foreign assets. For retirees not in that wealth tier, Italy offers a 7% flat tax on all foreign income for those who establish residency in qualifying municipalities in southern Italy (Abruzzo, Calabria, Campania, Molise, Apulia, Sardinia, and Sicily) with fewer than 20,000 inhabitants. This regime requires that the applicant receive a foreign pension and has not been an Italian tax resident in the previous five years. The 7% rate applies for up to ten years and is one of the most competitive available anywhere in Europe for pension-income retirees.
+
+## What to Do Next
+
+Tax planning for retirement abroad is not a topic to research on your own and act on without professional guidance. The rules change frequently—two of the three regimes described above have been modified in the last 24 months—and errors made before you establish residency are often permanent. Before committing to any destination, engage a tax attorney or qualified international tax advisor who works across both your home country and your target country. Review our [getting started guide](/faqs/getting-started) for a broader overview of the process, our [documents and processes](/faqs/documents-and-processes) page for what you'll need to prepare, and our [investor research advice](/faqs/investor-research-advice) for guidance on finding advisors you can trust.

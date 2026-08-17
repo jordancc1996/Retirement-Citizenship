@@ -31,9 +31,13 @@ const faqs = defineCollection({
     title: z.string(),
     metaTitle: z.string(),
     metaDescription: z.string(),
-    slug: z.string(),
-    category: z.string().optional(),
+    category: z.string(),
     question: z.string(),
+    order: z.number(),
+    relatedLinks: z.array(z.object({
+      label: z.string(),
+      url: z.string(),
+    })).optional(),
   }),
 });
 
