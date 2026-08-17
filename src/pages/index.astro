@@ -2,15 +2,251 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { SITE_CONFIG } from '../lib/seo/config';
+import { generateOrganizationSchema, generateWebsiteSchema } from '../lib/seo/structured-data';
+import blogsCard from '../assets/blogs-card.jpg';
+import lifestyleCard from '../assets/lifestyle-card-new.jpg';
+import aboutCard from '../assets/about-card.jpg';
+import costOfLivingCard from '../assets/cost-of-living-card.jpg';
+
+const title = 'Retirement Citizenship — Global Mobility Advisory';
+const description = 'Global mobility advisory for American families. Investment migration, golden visa programs, and second citizenship strategies for cross-border wealth.';
+const ogTitle = 'Retirement Citizenship | Golden Visas & Retirement Planning';
+const ogDescription = 'Expert guidance on retiring abroad. Discover affordable retirement destinations, golden visa programs, and citizenship pathways.';
+const canonical = `${SITE_CONFIG.url}/`;
+const ogImage = `${SITE_CONFIG.url}${SITE_CONFIG.defaultOgImage}`;
+const organizationSchema = generateOrganizationSchema();
+const websiteSchema = generateWebsiteSchema();
 ---
 <Layout>
   <Fragment slot="head">
-    <title>Retirement Citizenship — Global Mobility Advisory</title>
-    <meta name="description" content="Global mobility advisory for American families." />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={SITE_CONFIG.name} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={SITE_CONFIG.twitterHandle} />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   </Fragment>
-  <Header client:load />
-  <main style="min-height: 60vh; padding: 4rem; font-family: 'Cormorant Garamond', serif;">
-    <h1>Phase 2 — Header and Footer confirmed</h1>
-  </main>
-  <Footer client:load />
+
+  <div class="min-h-screen bg-background">
+    <Header variant="hero" client:load />
+
+    {/* Hero Section - Full Screen with Video Background */}
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+      <video
+        is:inline
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-black/30"></div>
+      
+      <div class="relative text-center text-white z-10">
+        <h1 class="text-2xl md:text-3xl font-light mb-4">
+          Residency as Infrastructure. Citizenship as Legacy.
+        </h1>
+        <p class="text-sm uppercase tracking-widest opacity-90">
+          Global Mobility Advisory for American Families
+        </p>
+        
+        <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2">
+          <div class="text-center">
+            <p class="text-sm uppercase tracking-widest mb-4">Scroll Down</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6 mx-auto animate-bounce"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Content Section */}
+    <section class="py-20 bg-background">
+      <div class="container mx-auto px-8 max-w-4xl text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-light mb-8 text-primary">
+          Optionality is not a luxury. It's a requirement.
+        </h2>
+        
+        <p class="text-lg text-primary leading-relaxed mb-16">
+          The calculus has changed. Geopolitical uncertainty, regulatory complexity, and healthcare economics have made second residency an essential consideration for American families with significant assets. Retirement Citizenship exists to navigate this landscape with precision—identifying jurisdictions that offer regulatory stability, lifestyle arbitrage, and clear pathways to citizenship.
+        </p>
+        
+      </div>
+    </section>
+
+    {/* Grid Section - Like Winch Design */}
+    <section class="py-20">
+      <div class="container mx-auto px-8">
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <a href="/strategic-analysis" class="group block">
+            <div class="relative overflow-hidden">
+              <img 
+                src={blogsCard.src}
+                alt="Strategic analysis and editorial content"
+                width={blogsCard.width}
+                height={blogsCard.height}
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+              <div class="absolute bottom-8 left-8 text-white">
+                <h3 class="text-2xl font-light mb-2">Strategic Analysis</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">View Articles</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="/lifestyle" class="group block">
+            <div class="relative overflow-hidden">
+              <img 
+                src={lifestyleCard.src}
+                alt="Luxury retirement lifestyle experiences"
+                width={lifestyleCard.width}
+                height={lifestyleCard.height}
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+              <div class="absolute bottom-8 left-8 text-white">
+                <h3 class="text-2xl font-light mb-2">Lifestyle</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Discover Regions</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <a href="/about" class="group block">
+            <div class="relative overflow-hidden">
+              <img 
+                src={aboutCard.src}
+                alt="About Retirement Citizenship"
+                width={aboutCard.width}
+                height={aboutCard.height}
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+              <div class="absolute bottom-8 left-8 text-white">
+                <h3 class="text-2xl font-light mb-2">About</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">Our Approach</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="/cost-of-living" class="group block">
+            <div class="relative overflow-hidden">
+              <img 
+                src={costOfLivingCard.src}
+                alt="International cost of living comparison"
+                width={costOfLivingCard.width}
+                height={costOfLivingCard.height}
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+              <div class="absolute bottom-8 left-8 text-white">
+                <h3 class="text-2xl font-light mb-2">Cost of Living</h3>
+                <p class="text-sm uppercase tracking-widest opacity-80">View Analysis</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    {/* Trust & Credibility Section */}
+    <section class="py-24 bg-background">
+      <div class="container mx-auto px-8 max-w-5xl">
+        <h2 class="font-display text-3xl md:text-4xl font-light text-center mb-6 text-primary">
+          Built on Legal Precision
+        </h2>
+        <p class="text-center text-muted-foreground text-lg mb-16 max-w-3xl mx-auto">
+          Every recommendation we publish is informed by active collaboration with licensed immigration attorneys who specialize in European residency and citizenship law.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center">
+            <p class="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">Legal Framework</p>
+            <p class="text-base text-primary leading-relaxed">
+              All program analysis is reviewed against current regulatory requirements by attorneys admitted to practice in the relevant jurisdictions.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <p class="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">Compliance First</p>
+            <p class="text-base text-primary leading-relaxed">
+              We partner exclusively with law firms that maintain anti-money laundering compliance protocols and conduct independent due diligence on fund structures.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <p class="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">Advisory Network</p>
+            <p class="text-base text-primary leading-relaxed">
+              Our attorney partners hold active memberships in the Investment Migration Council and national bar associations across Portugal, Spain, Greece, and Italy.
+            </p>
+          </div>
+        </div>
+        
+        <div class="mt-16 border-t border-border pt-12 text-center">
+          <p class="text-muted-foreground text-sm uppercase tracking-[0.15em] mb-4">How We Work</p>
+          <p class="text-primary text-lg leading-relaxed max-w-3xl mx-auto">
+            We do not provide legal advice. We provide the strategic analysis and program intelligence that allows you and your attorney to make informed decisions about residency and citizenship planning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="py-24 bg-secondary">
+      <div class="container mx-auto px-8 max-w-3xl text-center">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary mb-6">
+          Begin with a Private Conversation
+        </h2>
+        <p class="font-sans text-lg text-muted-foreground leading-relaxed mb-10">
+          We work with a select number of American families and their advisors each year. Engagements begin with a confidential, no-obligation consultation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/contact"
+            class="inline-block px-8 py-4 bg-primary text-primary-foreground font-medium text-sm uppercase tracking-wider rounded-full hover:bg-primary-light transition-colors"
+          >
+            Schedule a Private Consultation
+          </a>
+          <a
+            href="/briefing"
+            class="inline-block px-8 py-4 border border-primary text-primary font-medium text-sm uppercase tracking-wider rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            Request the 2026 Strategic Briefing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:load />
+  </div>
 </Layout>
