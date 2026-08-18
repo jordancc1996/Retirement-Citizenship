@@ -34,6 +34,7 @@ export default defineConfig({
     '/european-residency':
       '/strategic-analysis/second-residency-2026',
     '/contact-us': '/contact',
+    '/sitemap.xml': '/sitemap-index.xml',
   },
   vite: {
     resolve: {
