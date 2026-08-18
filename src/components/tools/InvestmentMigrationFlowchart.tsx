@@ -192,10 +192,10 @@ const InvestmentMigrationFlowchart = () => {
         {/* Header */}
         <header className="text-center mb-10">
           <h1 className="font-serif text-3xl md:text-4xl text-primary mb-4">
-            Your Path to Global Citizenship
+            Investment Migration Application Process
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Select a destination to view the specific residency or citizenship milestones.
+            Investment migration application process steps for 13 destinations, from file prep through approval and document issuance.
           </p>
         </header>
 

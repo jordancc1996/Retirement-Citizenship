@@ -30,7 +30,7 @@ const About = () => {
             About Retirement Citizenship
           </h1>
           <p className="font-sans text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-            Jurisdictional intelligence for capital preservation, regulatory alignment, and multi-generational estate continuity.
+            Retirement citizenship advisory at this firm covers Portugal, Greece, and Italy for American and Canadian families with $5M or more in investable assets.
           </p>
         </div>
       </section>

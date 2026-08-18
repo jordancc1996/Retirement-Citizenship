@@ -34,10 +34,10 @@ const Lifestyle = () => {
         {/* Hero Content */}
         <div className="container mx-auto px-8 max-w-4xl text-center relative z-10">
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light mb-6 text-white">
-            Lifestyle
+            Retirement Lifestyle Europe
           </h1>
           <p className="font-sans text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
-            Unlock a borderless future. The premier guide to citizenship by investment for those seeking the ultimate retirement citizenship abroad
+            Retirement lifestyle Europe for American and Canadian families covers Portugal, Greece, and Italy, with Argentina as a fourth coastal and urban alternative.
           </p>
         </div>
       </section>

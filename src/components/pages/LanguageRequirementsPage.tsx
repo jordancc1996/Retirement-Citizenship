@@ -52,7 +52,7 @@ const LanguageRequirementsNaturalization = () => {
         <div className="container mx-auto px-8 max-w-4xl">
           <div className="prose prose-lg max-w-none text-primary">
             <p className="text-xl leading-relaxed mb-8">
-              Content will be added here in the next update.
+              Language requirements for naturalization in Portugal and Spain sit at CEFR A2, while Italy and Greece typically require B1.
             </p>
           </div>
         </div>

@@ -75,7 +75,7 @@ const Contact = () => {
         <section className="py-24 bg-background">
           <div className="container mx-auto px-8 max-w-xl">
             <p className="font-sans text-muted-foreground leading-relaxed text-center mb-12">
-              We accept a limited number of new engagements each year. To begin, please share your name, contact email, and the primary objective of your inquiry. A principal will respond within one business day.
+              Retirement residency consultation is available to a limited number of American and Canadian families each year. To begin, please share your name, contact email, and the primary objective of your inquiry. A principal will respond within one business day.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">

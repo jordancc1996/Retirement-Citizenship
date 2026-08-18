@@ -106,10 +106,10 @@ const StudentMobilityCalculator = () => {
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-light text-primary mb-6 font-serif">
-              Family Wealth & Mobility Assessment
+              Family Golden Visa Assessment
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Answer the following to receive a tailored Golden Visa recommendation aligned with your family's lifestyle, assets, and future goals.
+              Family golden visa assessment for American and Canadian families maps lifestyle, assets, and budget to a recommended program.
             </p>
           </div>
 

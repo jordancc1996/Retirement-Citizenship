@@ -15,7 +15,7 @@ imageAlt: "The recent surge in Golden Visa interest among high-income Americans"
 excerpt: "Americans have become the largest group of Golden Visa applicants worldwide. An analysis of the drivers behind this unprecedented demand for second passports."
 featured: false
 heroKicker: "Golden Visa Insights • January 2026"
-heroSubtitle: "Why high-income Americans are rushing for second passports and residency abroad"
+heroSubtitle: "Golden visa for high income Americans now accounts for 30 percent of Henley and Partners global clients, with the US passport ranked 12th."
 ogImage: "https://www.retirementcitizenship.com/og-golden-visa-surge.jpg"
 relatedType: blog
 order: 13

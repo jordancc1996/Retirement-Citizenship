@@ -18,7 +18,7 @@ relatedType: analysis
 order: 12
 ---
 
-> The global investment migration market is an industry that generates over $20 billion in annual revenue and offers a tantalizing proposition to potential investors. The industry is expected to grow considerably in the upcoming years as demand for additional residency and citizenship increases. For investors, the industry promises enhanced global mobility, retirement arbitrage, health and education opportunities, and financial security. Unfortunately, this market has its issues as well.
+> Citizenship by investment fraud in a $20 billion market includes illegal Caribbean discounts as low as $70,000 against $200,000 minimums. The industry is expected to grow considerably in the upcoming years as demand for additional residency and citizenship increases. For investors, the industry promises enhanced global mobility, retirement arbitrage, health and education opportunities, and financial security. Unfortunately, this market has its issues as well. For investors, the industry promises enhanced global mobility, retirement arbitrage, health and education opportunities, and financial security. Unfortunately, this market has its issues as well.
 
 ## What is CBI Fraud?
 

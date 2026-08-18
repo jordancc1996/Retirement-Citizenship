@@ -208,10 +208,10 @@ const CitizenshipComparison = () => {
           where freedom meets extraordinary living
         </p>
         <h1 className="font-serif text-3xl md:text-5xl text-primary font-normal mb-4">
-          Retirement Citizenship Program Finder
+          Golden Visa Program Comparison for Americans and Canadians
         </h1>
         <p className="max-w-xl mx-auto text-primary/80 leading-relaxed">
-          Bespoke retirement solutions for discerning Americans.
+          Best golden visa for Americans and Canadians starts at 250,000 euros across 24 residency and citizenship programs.
         </p>
       </header>
 

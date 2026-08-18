@@ -150,7 +150,7 @@ const Tools = () => {
             Tools
           </h1>
           <p className="text-white/90 text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            Strategic instruments for global mobility planning. Analyze programs, compare jurisdictions, and model financial scenarios.
+            Golden visa planning tools on this page include four instruments built for American and Canadian families: program comparison, a UK inheritance tax model, a mobility quiz, and an application flowchart.
           </p>
         </div>
       </section>

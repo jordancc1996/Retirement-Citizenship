@@ -2,7 +2,7 @@
 title: "The New American Dream IS Global Mobility"
 hubTitle: "The New American Dream IS Global Mobility"
 metaTitle: "The New American Dream IS Global Mobility | Retirement Citizenship"
-metaDescription: "Americans are trading high-stress lifestyles for quality of life abroad. Discover why Portugal, Italy, Greece, and Argentina are the top golden visa destinations."
+metaDescription: "Global mobility for Americans and Canadians covers Portugal, Italy, Greece, and Argentina as golden visa alternatives to high-stress home-country living."
 slug: "american-dream-global-mobility"
 category: "market-intelligence"
 categoryLabel: "Market Intelligence"
@@ -15,7 +15,7 @@ imageAlt: "The new American dream of global mobility"
 excerpt: "Americans are trading high-stress domestic environments for strategic optionality abroad. Why Portugal, Italy, Greece, and Argentina lead the conversation."
 featured: false
 heroKicker: "Global Mobility • December 2025"
-heroSubtitle: "Why Americans are trading high-stress lifestyles for quality of life abroad"
+heroSubtitle: "Global mobility for Americans and Canadians includes Portugal, where 14,000 Americans lived as of 2025, plus Italy, Greece, and Argentina."
 ogImage: "/og-american-dream.jpg"
 relatedType: blog
 order: 16

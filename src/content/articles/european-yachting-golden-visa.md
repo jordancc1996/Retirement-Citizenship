@@ -15,7 +15,7 @@ imageAlt: "European yachting and the Golden Visa value proposition"
 excerpt: "How golden visas unlock premium maritime access across Portugal, Greece, and Italy. From the Algarve to the Aegean — a lifestyle analysis for discerning investors."
 featured: false
 heroKicker: "Luxury Lifestyle • January 2026"
-heroSubtitle: "How golden visas unlock the ultimate yachting lifestyle in Portugal, Greece, and Italy"
+heroSubtitle: "European yachting golden visa access in Portugal, Greece, and Italy covers Algarve, Aegean, and Amalfi marinas from 250,000 euros."
 ogImage: "/og-european-yachting.jpg"
 relatedType: blog
 order: 15

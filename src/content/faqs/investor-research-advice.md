@@ -7,7 +7,7 @@ question: "What advice would you give new investors starting research?"
 order: 9
 ---
 
-The investment migration industry has an information quality problem. Much of what appears in search results about retirement citizenship and residency programs is written by firms that earn commissions from the programs they recommend. The advisory landscape includes licensed attorneys, legitimate boutique consultancies, and a long tail of less qualified operators who are effectively program distributors dressed in professional language. For high-net-worth retirees making decisions that involve six or seven figures of capital and determine where they will live for the next 20 years, the ability to distinguish between those categories is not a minor skill—it is a financial survival skill. This page gives you a framework for conducting credible due diligence.
+Investment migration due diligence starts with government sources, then independent legal analysis, before any six or seven figure commitment. Much of what appears in search results about retirement citizenship and residency programs is written by firms that earn commissions from the programs they recommend. The advisory landscape includes licensed attorneys, legitimate boutique consultancies, and a long tail of less qualified operators who are effectively program distributors dressed in professional language. For high-net-worth retirees making decisions that involve six or seven figures of capital and determine where they will live for the next 20 years, the ability to distinguish between those categories is not a minor skill—it is a financial survival skill. This page gives you a framework for conducting credible due diligence.
 
 ## Understanding How to Research Investment Migration Options
 

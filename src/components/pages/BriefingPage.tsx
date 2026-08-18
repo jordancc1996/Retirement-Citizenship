@@ -72,7 +72,7 @@ const Briefing = () => {
                   The 2026 UHNW Global Mobility & Tax Strategy Report
                 </h1>
                 <p className="font-sans text-white/80 text-lg leading-relaxed">
-                  An institutional analysis of residency and citizenship options for American families with significant cross-border assets.
+                  The 2026 report covers residency, citizenship, and tax treatment across 12 jurisdictions for American and Canadian families with cross-border assets.
                 </p>
               </div>
               <div className="flex justify-center">
