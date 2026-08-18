@@ -51,8 +51,34 @@ const LanguageRequirementsNaturalization = () => {
       <article className="py-16 bg-background">
         <div className="container mx-auto px-8 max-w-4xl">
           <div className="prose prose-lg max-w-none text-primary">
+            <h2 className="text-3xl font-light mt-0 mb-6">Language Requirements by Country</h2>
             <p className="text-xl leading-relaxed mb-8">
-              Language requirements for naturalization in Portugal and Spain sit at CEFR A2, while Italy and Greece typically require B1.
+              Language requirements for naturalization in Portugal and Spain sit at CEFR A2, while Italy and Greece require B1. These requirements apply to citizenship applications only, not to Golden Visa residency. Most Golden Visa holders are never tested because they exit at permanent residency before reaching the citizenship stage.
+            </p>
+
+            <h3 className="text-2xl font-light mt-8 mb-4">Portugal</h3>
+            <p className="leading-relaxed mb-6">
+              Portugal requires CEFR A2 proficiency in Portuguese. The standard test is the CAPLE exam, administered by the University of Lisbon. The language test is required after five years of legal residency before applying for citizenship. Permanent residency at five years does not require a language test. A2 is a basic conversational level, the equivalent of roughly 200 hours of study.
+            </p>
+
+            <h3 className="text-2xl font-light mt-8 mb-4">Spain</h3>
+            <p className="leading-relaxed mb-6">
+              Spain requires CEFR A2 Spanish for naturalization after ten years of legal residency (two years for nationals of Latin American countries, Portugal, Andorra, the Philippines, Equatorial Guinea, and Sephardic Jews). The standard test is the DELE A2, administered by the Instituto Cervantes worldwide. Spain's Non-Lucrative Visa does not require a language test for residency renewal.
+            </p>
+
+            <h3 className="text-2xl font-light mt-8 mb-4">Italy</h3>
+            <p className="leading-relaxed mb-6">
+              Italy requires CEFR B1 Italian for naturalization after ten years of legal residency for non-EU citizens. The B1 level requires approximately 350-400 hours of study and covers everyday situations, travel, and familiar topics. The test is administered through authorized Italian cultural institutes. Italy's Elective Residency Visa does not require Italian proficiency for initial application or renewal.
+            </p>
+
+            <h3 className="text-2xl font-light mt-8 mb-4">Greece</h3>
+            <p className="leading-relaxed mb-6">
+              Greece requires CEFR B1 Greek for naturalization after seven years of legal residency. Greek language tests are administered through the Greek state certificate of language proficiency (KPG). B1 Greek is considered moderately challenging for English speakers given the different alphabet and grammar structure. The Golden Visa residency permit does not require Greek language proficiency at any stage.
+            </p>
+
+            <h2 className="text-3xl font-light mt-12 mb-6">What This Means for Golden Visa Investors</h2>
+            <p className="leading-relaxed mb-6">
+              For most American and Canadian Golden Visa investors, language requirements are a long-term consideration rather than an immediate barrier. The residency permit itself, including renewals every two to five years, does not require language proficiency in any of these four countries. Language becomes relevant only if you pursue citizenship, which requires five to ten years of residency first depending on the country. Many investors reach permanent residency and stop there, making the language requirement irrelevant to their planning.
             </p>
           </div>
         </div>
