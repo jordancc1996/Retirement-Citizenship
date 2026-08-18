@@ -7,7 +7,7 @@ export const generateOrganizationSchema = () => ({
   '@type': 'ProfessionalService',
   '@id': `${SITE_CONFIG.url}/#organization`,
   name: SITE_CONFIG.name,
-  description: 'Strategic global mobility advisory for American families with significant cross-border assets.',
+  description: 'Strategic global mobility advisory for American and Canadian families with significant cross-border assets.',
   url: SITE_CONFIG.url,
   image: `${SITE_CONFIG.url}${SITE_CONFIG.defaultOgImage}`,
   logo: {
@@ -116,7 +116,7 @@ export const generateLocalBusinessSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: SITE_CONFIG.name,
-  description: 'Strategic global mobility advisory for American families with significant cross-border assets.',
+  description: 'Strategic global mobility advisory for American and Canadian families with significant cross-border assets.',
   url: SITE_CONFIG.url,
   logo: `${SITE_CONFIG.url}${SITE_CONFIG.logo}`,
   priceRange: '$$$$',

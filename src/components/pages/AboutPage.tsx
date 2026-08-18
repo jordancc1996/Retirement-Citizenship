@@ -42,7 +42,7 @@ const About = () => {
 
             <h2 className="font-serif text-3xl font-light mb-6 text-primary">Our Founding Thesis</h2>
             <p className="text-lg leading-relaxed mb-10">
-              The regulatory and geopolitical landscape facing American families with significant assets has shifted fundamentally. Capital controls, extraterritorial tax enforcement, and the accelerating complexity of cross-border compliance have made jurisdictional optionality a structural requirement—not a lifestyle preference. Second residency and citizenship are no longer aspirational; they are instruments of capital preservation, succession continuity, and sovereign risk mitigation. Retirement Citizenship was founded on the conviction that families who build wealth across decades deserve the same rigor in protecting it across borders—through deliberate, forward-looking residency and citizenship architecture.
+              The regulatory and geopolitical landscape facing American and Canadian families with significant assets has shifted fundamentally. Capital controls, extraterritorial tax enforcement, and the accelerating complexity of cross-border compliance have made jurisdictional optionality a structural requirement—not a lifestyle preference. Second residency and citizenship are no longer aspirational; they are instruments of capital preservation, succession continuity, and sovereign risk mitigation. Retirement Citizenship was founded on the conviction that families who build wealth across decades deserve the same rigor in protecting it across borders—through deliberate, forward-looking residency and citizenship architecture.
             </p>
 
             <h2 className="font-serif text-3xl font-light mb-6 text-primary">Our Methodology</h2>
@@ -52,7 +52,7 @@ const About = () => {
 
             <h2 className="font-serif text-3xl font-light mb-6 text-primary">Who We Work With</h2>
             <p className="text-lg leading-relaxed mb-10">
-              Our clients are American families with $5M or more in investable assets who recognize that residency planning is an extension of their broader wealth strategy. We work with family offices managing multi-generational portfolios, where a second jurisdiction serves as both a risk mitigation tool and a succession planning instrument. We also serve the attorneys, tax advisors, and wealth managers who advise these families—professionals who require reliable, current jurisdictional data to fulfill their fiduciary responsibilities. Our work is deliberate, research-intensive, and structured around long-term outcomes. We engage with principals and advisors who approach residency and citizenship as a multi-year commitment, not a transaction.
+              Our clients are American and Canadian families with $5M or more in investable assets who recognize that residency planning is an extension of their broader wealth strategy. We work with family offices managing multi-generational portfolios, where a second jurisdiction serves as both a risk mitigation tool and a succession planning instrument. We also serve the attorneys, tax advisors, and wealth managers who advise these families—professionals who require reliable, current jurisdictional data to fulfill their fiduciary responsibilities. Our work is deliberate, research-intensive, and structured around long-term outcomes. We engage with principals and advisors who approach residency and citizenship as a multi-year commitment, not a transaction.
             </p>
 
             <p className="text-lg leading-relaxed mb-10">
@@ -83,7 +83,7 @@ const About = () => {
             Begin with a Private Conversation
           </h2>
           <p className="font-sans text-lg text-white/85 leading-relaxed mb-10">
-            We work with a select number of American families and their advisors each year. Engagements begin with a confidential, no-obligation consultation.
+            We work with a select number of American and Canadian families and their advisors each year. Engagements begin with a confidential, no-obligation consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

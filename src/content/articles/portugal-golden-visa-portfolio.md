@@ -42,7 +42,7 @@ The Portugal Golden Visa offers a unique opportunity for investors because the p
 
 ### Safety and Quality of Life + Retirement Arbitrage
 
-American families often mention safety concerns as a motivation for looking at residency alternatives. Portugal ranks as the #7 safety country globally and has substantially lower crime rates versus comparable U.S. cities. In addition to safety concerns, many Americans cite the high and rising cost of living in the United States as a concern. Portugal is substantially cheaper than the United States and expenses like healthcare and health treatment are 60-70% lower than the United States.
+American and Canadian families often mention safety concerns as a motivation for looking at residency alternatives. Portugal ranks as the #7 safety country globally and has substantially lower crime rates versus comparable U.S. cities. In addition to safety concerns, many Americans cite the high and rising cost of living in the United States as a concern. Portugal is substantially cheaper than the United States and expenses like healthcare and health treatment are 60-70% lower than the United States.
 
 Knowing your family has the legal right to live in one of the world's safest countries and has access to retire in a substantially cheaper jurisdiction provides psychological value that's impossible to quantify and very meaningful to investor families.
 
@@ -71,7 +71,7 @@ Careful planning is pivotal for families with young children. The 5-year (potent
 
 ## A Sophisticated Wealth Strategy
 
-The Portuguese golden visa has become popular among wealthy American families as a strategic need and offers geographic diversification, optionality and potential retirement and health arbitrage.
+The Portuguese golden visa has become popular among wealthy American and Canadian families as a strategic need and offers geographic diversification, optionality and potential retirement and health arbitrage.
 
 The families pursuing this route see it as an alternative asset allocation that delivers investment exposure to Portuguese markets and receive European residency with a pathway to citizenship. This is a sophisticated wealth strategy that combines portfolio management, risk mitigation, retirement arbitrage, healthcare arbitrage and multi-generational planning.
 
