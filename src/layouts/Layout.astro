@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { Toaster } from '../components/ui/toaster';
 import StickyCTA from '../components/StickyCTA';
 import CookieConsent from '../components/CookieConsent';
+import ExitIntentPopup from '../components/ExitIntentPopup';
 
 interface Props {
   title?: string;
@@ -41,5 +42,6 @@ const { title, description } = Astro.props;
     <Toaster client:load />
     <StickyCTA client:load currentPath={Astro.url.pathname} />
     <CookieConsent client:load />
+    <ExitIntentPopup client:load currentPath={Astro.url.pathname} />
   </body>
 </html>
