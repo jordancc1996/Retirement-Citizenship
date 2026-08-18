@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import { Calculator, Home, Heart, PoundSterling } from "lucide-react";
+import { ArrowLeft, Calculator, Home, Heart, PoundSterling } from "lucide-react";
 
 const InheritanceTaxCalculator = () => {
   const [estateValue, setEstateValue] = useState<string>("");
@@ -84,6 +84,14 @@ const InheritanceTaxCalculator = () => {
       <main>
       <section className="pt-32 pb-20 px-4 md:px-8">
         <div className="container mx-auto max-w-4xl">
+          <a 
+            href="/tools" 
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span>Back to Tools</span>
+          </a>
+
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary mb-6">
               <Calculator className="w-4 h-4" />
